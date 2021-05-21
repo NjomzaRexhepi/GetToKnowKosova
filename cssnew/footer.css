@@ -1,0 +1,115 @@
+.footer {
+    background-color: #052679;
+    padding: 30px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.container1 {
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: #f0e9e9;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 450;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fdfdfd;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li a {
+    font: 12px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+    box-sizing: border-box;
+}
+
+.footer-col .social-links a:hover {
+    color: #494648;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.copy h4 {
+    font-size: 19px;
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 0px;
+    color: #ffffff;
+    line-height: 1;
+    font-weight: 500;
+    box-sizing: border-box;
+}

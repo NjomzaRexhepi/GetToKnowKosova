@@ -1,0 +1,38 @@
+#onclick {
+    color: var(--third-color);
+    border-bottom: var(--third-color) 2px solid;
+}
+.exchangeCK {
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--weatherApp-color);
+    color: #333;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, .05) solid;
+}
+/* Transport */
+.transport-main h3 {
+    margin: 20px 0;
+}
+
+
+.transport-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.transport-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+    transition: 0.5s;
+}
+
+.transport-main nav li:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+.transport-main a:hover {
+    font-weight: bold;
+}

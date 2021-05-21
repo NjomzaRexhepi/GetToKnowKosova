@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 210px;
+    padding-top: 150px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.navbar ul {
+    display: flex;
+    animation: slideInFromTop 1s ease-in;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: var(--third-color);
+    border-bottom: 2px var(--third-color) solid;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 8.3%;
+}
+
+.navbar .logo {
+    font-family: 'Satisfy', cursive;
+    color: var(--third-color);
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.nav-container {
+    max-width: 1205px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+#onclick {
+    color: var(--third-color);
+    border-bottom: var(--third-color) 2px solid;
+}

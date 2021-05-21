@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/**{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}*/
+/*html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: rgb(56, 152, 182);
+}*/
+.kon{
+  position: relative;
+  width: 400px;
+  background: rgba(0, 0, 0, .05);
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.kon .kont2{
+  display: none;
+}
+.kon .tteksti{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.kon .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.kon .edit:hover{
+  text-decoration: underline;
+}
+.kon .review_stars input{
+  display: none;
+}
+.review_stars label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: var(--third-color);
+}
+input:checked ~ label{
+  color: var(--third-color);
+}
+input#rate-5:checked ~ label{
+  color: var(--third-color);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+#rate-1:checked ~ form header:before{
+  content: "I hate it!";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it!";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome!";
+}
+#rate-4:checked ~ form header:before{
+  content: "I really like it!";
+}
+#rate-5:checked ~ form header:before{
+  content: "I  love it!";
+}
+.kon form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: var(--third-color);
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .tekst_pershkrimi{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

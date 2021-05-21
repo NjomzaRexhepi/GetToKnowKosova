@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat&display=swap');
+
+:root {
+    --primary-color: RGB(6,78,161);
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --third-color: rgb(210, 168, 81);
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease-in;
+}
+.btn-primary {
+    border: 1px transparent solid;
+}
+.btn-dark {
+    border: 1px transparent solid;
+}
+.btn:hover {
+    transform: scale(.96);
+}
+.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px var(--primary-color) solid;
+    
+}
+.btn-dark:hover {
+    color: var(--dark-color);
+    background-color: #fff;
+    border: 1px var(--dark-color) solid;
+    font-weight: bold;
+}
+.alert-success {
+    background-color: var(--light-color);
+}
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.1s ease-in;
+} 
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: 0.1s ease-in;
+} 
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+    transition: 0.1s ease-in;
+    
+} 
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.bg-primary a, .btn-primary a, 
+.bg-secondary a, .btn-secondary a,
+.bg-dark a, .btn-dark a {
+    color:#fff;
+}

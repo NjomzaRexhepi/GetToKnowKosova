@@ -1,0 +1,741 @@
+* {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+ p, h3 {
+     color: var(--dark-color);
+ }
+#wrapper {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+}
+
+#wrapper h2 {
+    padding: 30px 0;
+}
+
+#slider-nature {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+}
+
+#fig {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-style: italic;
+    width: 30%;
+    padding: 10px 20px;
+    opacity: 0;
+    left: -50%;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+#foto1:hover #fig {
+    opacity: 1;
+    left: 0;
+}
+
+#foto2:hover #fig {
+    opacity: 1;
+    left: 0;
+}
+
+#foto3:hover #fig {
+    opacity: 1;
+    left: 0;
+}
+
+#foto4:hover #fig {
+    opacity: 1;
+    left: 0;
+}
+
+#foto5:hover #fig {
+    opacity: 1;
+    left: 0;
+}
+#foto {
+    background-color: var(--light-color);
+}
+#fig1 {
+    position: absolute;
+    border: 1px solid rgb(31, 30, 30);
+    background: rgba(46, 85, 46, 0.404);
+    padding: 10px 15px;
+    color: white;
+    opacity: 0;
+    top: 0;
+}
+
+.slide:hover #fig1 {
+    opacity: 1;
+    left: 0;
+}
+
+.slide1:hover #fig1 {
+    opacity: 1;
+    right: 0;
+}
+
+.slide2:hover #fig1 {
+    opacity: 1;
+    left: 0;
+}
+
+.slide3:hover #fig1 {
+    opacity: 1;
+    right: 0;
+}
+
+.slide4:hover #fig1 {
+    opacity: 1;
+    left: 0;
+}
+
+figure {
+    padding: 4px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.navigation {
+    bottom: 10px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: inherit;
+    background-color: var(--light-color);
+}
+
+.navigation li {
+    list-style: none;
+    padding: 2px;
+}
+
+.navigation li img,
+button {
+    width: 80px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: -20px;
+    cursor: pointer;
+    outline: none;
+}
+
+h2 {
+    font-size: 2em;
+    color-interpolation-filters: linearRGB;
+    text-align: center;
+}
+
+#hiking {
+    padding-top: 5%;
+    background-color: var(--light-color);
+}
+
+#hiking-textpart {
+    margin-left: 3%;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 315px;
+    text-align: start;
+    overflow: auto;
+    background-color: rgba(100, 95, 95, 0.199);
+    box-shadow: 0 5px 05px#494648;
+}
+
+#ferrata {
+    padding-top: 2%;
+    background-color: var(--light-color);
+}
+
+#ferrata-textpart {
+    margin-right: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 350px;
+    text-align: start;
+    overflow: auto;
+    background-color: rgba(100, 95, 95, 0.199);
+    box-shadow: 0 5px 05px#494648;
+}
+
+#skiing {
+    padding-top: 2%;
+}
+
+#skiing-textpart {
+    margin-left: 3%;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 315px;
+    text-align: start;
+    overflow: auto;
+    background-color: rgba(100, 95, 95, 0.199);
+    box-shadow: 0 5px 05px#494648;
+}
+
+#kayak {
+    padding-top: 2%;
+}
+
+#kayak-textpart {
+    margin-right: 3%;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 315px;
+    text-align: start;
+    overflow: auto;
+    background-color: rgba(100, 95, 95, 0.199);
+    box-shadow: 0 5px 05px#494648;
+}
+
+#paragliding {
+    padding-top: 2%;
+}
+
+#paragliding-textpart {
+    margin-left: 3%;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 315px;
+    text-align: start;
+    overflow: auto;
+    background-color: rgba(100, 95, 95, 0.199);
+    box-shadow: 0 5px 05px#494648;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#hiking a:hover, 
+a:active {
+    background-color: #3f51adc7;
+}
+
+.mini {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-collapse: unset;
+}
+
+.mini:hover {
+    opacity: 0.5;
+}
+
+#lista-hiking {
+    list-style-image: url("mountain.png");
+}
+
+
+/*begin slider for hiking*/
+
+#hiking-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.left {
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.left:hover {
+    background: rgba(128, 128, 128, 0.404);
+}
+
+.left {
+    left: 83%;
+}
+
+
+/*end slider for hiking*/
+
+
+/*begin slider for via ferrata*/
+
+#ferrata-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide1.active1 {
+    display: block;
+}
+
+.left1 {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    bottom: 10%;
+    outline: none;
+}
+
+.left1:hover {
+    background: rgba(128, 128, 128, 0.404);
+}
+
+.left1 {
+    left: 5%;
+}
+
+
+/*end slider for via ferrata*/
+
+
+/*begin slider for skiing*/
+
+#skiing-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide2.active2 {
+    display: block;
+}
+
+.left2 {
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.left2:hover {
+    background: rgba(128, 128, 128, 0.404);
+}
+
+.left2 {
+    left: 83%;
+}
+
+
+/*end slider for skiing*/
+
+
+/*begin slider for kayaking*/
+
+#kayak-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide3.active3 {
+    display: block;
+}
+
+.left3 {
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.left3:hover {
+    background: rgba(128, 128, 128, 0.404);
+}
+
+.left3 {
+    left: 5%;
+}
+
+
+/*end slider for kayaking*/
+
+
+/*begin slider for paragliding*/
+
+#paragliding-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide4.active4 {
+    display: block;
+}
+
+.left4 {
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.left4:hover {
+    background: rgba(128, 128, 128, 0.404);
+}
+
+.left4 {
+    left: 83%;
+}
+
+
+/*end slider for paragliding*/
+
+
+/* Calendar*/
+
+#cal-wrap {
+    position: relative;
+    margin-top: 4%;
+    border-top: 2px solid black;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+
+/* DATE SELECTOR*/
+
+#cal-date {
+    padding-left: 27%;
+    width: 600px;
+    display: flex;
+}
+
+#cal-mth,
+#cal-yr,
+#cal-set {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #586DD8;
+}
+
+#cal-mth,
+#cal-yr {
+    border-right: 1px solid #ddd;
+}
+
+#cal-set {
+    border: 0;
+}
+
+#cal-mth:hover {
+    background: #3F51AD;
+}
+
+#cal-yr:hover {
+    background: #3F51AD;
+}
+
+#cal-set:hover {
+    background: #3F51AD;
+}
+
+
+/* CALENDAR*/
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#calendar tr.head td {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: #95B7EE;
+    padding: 15px;
+    text-align: center;
+}
+
+#calendar tr.day td {
+    border: 1px solid #ddd;
+    width: 14.28%;
+    padding: 15px 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#calendar tr.day td:hover {
+    background: radial-gradient(circle at center, white, white, #95B7EE);
+    cursor: pointer;
+}
+
+#calendar tr td.blank:hover {
+    background: #b3b3b3;
+}
+
+#calendar tr td.blank {
+    background: #f5f5f5;
+}
+
+#calendar .dd {
+    font-size: 1.2em;
+    color: rgb(88, 88, 88);
+}
+
+#calendar .evt {
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    overflow: hidden;
+    color: #3F51AD;
+}
+
+
+/* ADD/EDIT EVENT */
+
+#cal-event form {
+    padding: 15px;
+    margin-top: 20px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+#cal-event h1 {
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+#evt-date {
+    color: rgb(88, 88, 88);
+    margin: 10px 0;
+}
+
+#cal-event textarea {
+    display: block;
+    box-sizing: padding-box;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+#cal-event input[type=button],
+#cal-event input[type=submit] {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2em;
+    border: 0;
+    background: #3F51AD;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cal-event input[type=close] {
+    float: right;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    border: 0;
+    text-align: center;
+    background: #3F51AD;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* FOOTER*/
+
+.footer {
+    background-color: #052679;
+    padding: 30px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: #f0e9e9;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 450;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fdfdfd;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footer-col ul li a {
+    font: 12px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+    box-sizing: border-box;
+}
+
+.footer-col .social-links a:hover {
+    color: #494648;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.copy h4 {
+    font-size: 19px;
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 0px;
+    color: #ffffff;
+    line-height: 1;
+    font-weight: 500;
+    box-sizing: border-box;
+}

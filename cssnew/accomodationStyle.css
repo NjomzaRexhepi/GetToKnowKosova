@@ -1,0 +1,5 @@
+#onclick {
+    color: var(--third-color);
+    border-bottom: var(--third-color) 2px solid;
+}
+

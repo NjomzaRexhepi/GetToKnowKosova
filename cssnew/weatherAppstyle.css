@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    /*--primary-color: #293251;
+    --secondary-color: #e0eaf7;
+    --third-color: #00BFFF;*/
+    --weatherApp-color: #e0eaf7;
+}
+
+.main-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    font-family: 'Statisfy', cursive;
+}
+.inputValue {
+    background-color: var(--weatherApp-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.input #submitW {
+    padding: 0 25px;
+}
+
+.input form {
+    display: flex;
+    justify-content: space-between;
+}
+.box-shape {
+    font-family: 'Statisfy', cursive;
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, .05) solid;
+    background: var(--weatherApp-color);
+}
+.box-shape > *:first-child {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+.weather-icon {
+    height: 33%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.others {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph-style {
+    color: var(--primary-color);
+}
+.others p{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-first{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.temperature > *:nth-child(2) {
+    margin-top: -25px;
+    font-size: 3rem;
+}
+.temperature > *:nth-child(3) {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.temperature > *:nth-child(2), .temperature > *:nth-child(3) {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.p-second {
+    font-size: 1rem;
+    
+}
+.p-third {
+    font-size: 0.8rem;
+}
+.py-1 {
+    padding: 5px 0;
+}
+.py-2 {
+    padding: 10px 0;
+}
+.py-3 {
+    padding: 30px 0;
+}
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputValue, .inputValue > option {
+    font-family: 'Statisy', cursive;
+    color: var(--dark-color);
+}
+#span-1, #span-2 {
+    display: none;
+}

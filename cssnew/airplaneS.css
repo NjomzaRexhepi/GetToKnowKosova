@@ -1,0 +1,27 @@
+
+.preload{
+    top:0;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+.airplane{
+    height: 200px;
+    animation: airplane 1s ease infinite alternate;
+}
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes airplane{
+    from{
+     transform: translateY(0px);
+    }
+    to{
+     transform: translateY(30px);
+    }
+
+}

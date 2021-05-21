@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: RGB(6,78,161);
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --third-color: rgb(210, 168, 81);
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+html {
+    font-family: poppins;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    /*background: RGB(235, 229, 229);*/
+}
+.bg {
+    background: radial-gradient(circle, transparent 50%, RGB(6,78,161) 150%), url("1stTest.jpg"), url("2st_Test.jpg");
+    background-repeat: no-repeat, no-repeat, repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+}
+.header {
+    height: 100%;
+    background-color: var(--primary-color);
+}
+.header-container {
+    margin-left: 3%;
+    width: 97%;  
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    font-size: 15px;
+}
+
+.logo-part-2 {
+    width: 100%;
+}
+.empty {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.header-inside {
+    box-shadow: 0px 0px 13px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left-side {
+    width: 7%;
+    height: 100%;
+    transition: 0.4s;
+}
+.left-side:hover {
+    background: linear-gradient(to top, var(--dark-color), transparent);
+}
+/*in the middle*/
+.in-the-middle {
+    width: 60%;
+    display: flex;
+}
+.in-the-middle-inside > a {
+    font-size: 0.9em;
+}
+.in-the-middle-inside {
+    text-transform: uppercase;
+    display: inline;
+    width: 22%;
+    transition: 0.5s;
+}
+.in-the-middle-inside a {
+    color: #EFF6FC;
+    text-decoration: none;
+    text-shadow: 2px 2px var(--primary-color);
+    transition: color 0.5s;
+}
+.in-the-middle-inside a:hover {
+    border-bottom: 1px solid  var(--third-color); 
+    color: var(--third-color);
+    text-shadow: none;
+}
+.the-header {
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 14px;
+    transition: 0.5s;
+}
+.in-the-middle-inside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #EFF6FC;
+    transition: 0.4s;
+}
+.in-the-middle-inside ul li {
+    font-size: 0.8em;
+    padding-left: 15px;
+    color: transparent;
+    height: 25px;
+    transition: 0.4s;
+}
+.in-the-middle-inside li a {
+    text-shadow: none;
+    color: transparent;
+    transition: 0.5s;
+}
+.in-the-middle-inside:hover {
+    
+    background: linear-gradient(to top, var(--dark-color), transparent);
+}
+.in-the-middle-inside:hover li{
+    color: #EFF6FC;
+}
+.in-the-middle-inside:hover li a {
+    color: #EFF6FC;
+}
+.in-the-middle-inside li a:hover {
+    color: var(--third-color);
+}
+.in-the-middle-inside:hover ul{
+    padding-top: 15px;
+    background: linear-gradient(to bottom, var(--dark-color), transparent);
+}
+/*right side*/
+.right-side {
+    text-align: center;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-side a {
+    color: #EFF6FC;
+}
+
+.search-box {
+    box-shadow: 0px 0px 1px 2px var(--primary-color);
+    margin: 2%;
+    /*height: 38px;*/
+    width: 230px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.search-button {
+    float: right;
+    width: 11.5%;
+    height: 78%;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-text {
+    color: #EFF6FC;
+    height: 28px;
+    border: none;
+    outline: none;
+    background: transparent;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    margin-top: 1.5%;
+    padding-left: 6%;
+    transition: 0.4s;
+    width: 0px;
+}
+.search-box:hover {
+    width: 230px;
+}
+.search-box:hover > .search-text {
+    width: 60%;
+    height: 28px;
+}
+.search-box:hover > .search-button {
+    background: var(--third-color);
+}
+.search-box:hover > .search-button > img {
+    mix-blend-mode: difference;
+}
+.search-box:hover {
+    
+    background: linear-gradient(to top, var(--dark-color), transparent);
+}
+.search-text::placeholder {
+    color: #EFF6FC;
+}
+.search-box.open {
+    background: linear-gradient(to bottom , var(--primary-color) 1%, transparent , var(--primary-color) 122%);
+    width: 230px;
+}
+.search-box.open .search-text {
+    width: 80%;
+}
+.search-box.open .search-button {
+    background: var(--third-color);
+}
+img {
+    width: auto;
+}
+
+.menu {
+    width: 10%;
+    height: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: inherit;
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    cursor: pointer; /*me e qit doren ne vend te mausit*/
+    transition: 0.5s;
+}
+.menu-button-hamburger {
+    width: 70%;
+    height: 3px;
+    background: #EFF6FC;
+    border-radius: 25%;
+    box-shadow: 0px 0px 2px 1px RGB(6,78,161);
+    transition: 0.5s;
+}
+.menu-button-hamburger::before, .menu-button-hamburger::after {
+    content: '';
+    position: absolute;
+    width: 0.7%;
+    padding-right: 1%;
+    height: 3px;
+    background: #EFF6FC;
+    border-radius: 25%;
+    box-shadow: 0px 0px 2px 1px RGB(6,78,161);
+    transition: 0.5s;
+}
+.menu-button-hamburger::before {
+    transform: translate(-50%, -7px);
+}
+.menu-button-hamburger::after {
+    transform: translate(-50%, 7px);
+}
+.menu-button-hamburger:hover, .menu-button-hamburger:hover::before, .menu-button-hamburger:hover::after {
+    background: var(--third-color);
+}
+.menu-button:hover {
+    background: linear-gradient(to top, var(--dark-color), transparent);
+}
+.menu-button.open .menu-button-hamburger {
+    background: transparent;
+    box-shadow: none;
+}
+.menu-button.open .menu-button-hamburger::before {
+    transform: rotate(45deg) translate(-8px, 8px);
+    background: var(--third-color);
+}
+.menu-button.open .menu-button-hamburger::after {
+    transform: rotate(-45deg) translate(-8px, -8px);
+    background: var(--third-color);
+}
+.menu-button.open .menu-button {
+    background: linear-gradient(to top, var(--dark-color), transparent);
+    background-color: var(--secondary-color);
+}
+/*.menu.open .menu-window {
+    transform: translate(-250px, 7px);
+    width: 284px;
+    height: 600px;
+    background: linear-gradient(to bottom, RGB(6,78,161), transparent);
+    box-shadow: 0px 0px 2px 1px RGB(6,78,161);
+    visibility: visible;
+}
+.menu-window button {
+    visibility: hidden;
+}
+.menu.open .menu-window button{
+    visibility: visible;
+    
+}*/
+/*hidden part*/
+.hidden-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    background-color: var(--dark-color);
+    display: block;
+    visibility: hidden;
+}
+.hidden-menu-ontop {
+    display: flex;
+    padding: 3%;
+    text-decoration: none;
+    height: 65%;
+    /*background: RGBA(6,78,161, 0.3);*/
+    border-radius: 100px;
+    /*border-color: 1px solid RGBA(6,78,161, 0.3);*/
+}
+.hidden-menu-ontop-inside {
+    padding: 7%;
+    width: 50%;
+    height: 50%;
+    /*background: RGBA(6,78,161, 0.3);*/
+    text-transform: uppercase;
+    font-size: 1.1em;
+    display: grid;
+    
+}
+
+.hidden-menu-bottom {
+    text-align: center;
+}
+.social {
+    padding-left: 425px;
+}
+.hidden-menu-bottom .social i:hover {
+    color: var(--light-color);
+}
+.hidden-menu-ontop-inside a {
+    text-decoration: none;
+    color: #EFF6FC;
+}
+.hidden-menu-ontop-inside ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.hidden-menu-ontop-inside li {
+    margin-bottom: 3%;
+}
+.hamburger-header {
+    text-decoration: none;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.hidden-menu-bottom h4 {
+    color: #EFF6FC;
+    padding-bottom: 20px;
+}
+
+.hidden-menu .social i {
+    padding: 15px;
+}
+
+.button {
+    display: block;
+    margin-bottom: 3%;
+}
+.hidden-menu.open {
+    visibility: visible;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to top, var(--dark-color), transparent);
+}
+.header.open{
+    background-color: var(--primary-color);
+}
+
+.hidden-menu-ontop-inside .btn {
+    border: 1px var(--primary-color) solid;
+}

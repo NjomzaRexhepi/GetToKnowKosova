@@ -1,0 +1,9 @@
+RGB(6,78,161)
+#5085A5
+#8FC1E3
+#EFF6FC -- si e bardh == used
+#FAED26 - ma e leht (#F3F973) #D2691E - si gold
+
+https://htmlcolorcodes.com/
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>

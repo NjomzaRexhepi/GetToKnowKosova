@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -100;
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+}
+
+.slides{
+    width: 500%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+   
+
+}
+/*  
+.slide bg{
+    width:100%;
+    height: 600px;
+
+}
+*/
+
+
+
+
+
+.slides input{
+    display: none;
+}
+
+.first{
+    width:20%;
+    transition: 2s;
+    
+    
+    
+   
+}.second-slide{
+    width: 20%;
+    transition: 2s;
+    
+   
+}
+
+.third-slide{
+    width: 20%;
+    transition:2s;
+   
+
+
+}
+
+
+.fourth-slide{
+    width: 20%;
+    transition: 2s;
+    
+   
+}
+
+
+
+.navigation-manual{
+    position: absolute;
+    width: 30%;
+    padding-right: 50px;
+    height: 100px;
+    display: flex;
+    top: 500px;
+    padding-left: 100px;
+    position: absolute;
+    z-index: 100;
+
+}
+.manual-btn{
+
+    border: 1px solid black;
+
+    width:50px;
+    height:2px;
+    cursor: pointer;
+    transition: 2s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right:20px ;
+}
+.manual-btn:hover{
+    background:#0f0f0f;
+
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+
+
+
+.text{
+    text-align: center;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: none;
+    width: 600px;
+    justify-content: center;
+    margin-top:465px;
+    /*margin-left: -120px;*/
+    margin-right: 1000px;
+   
+}
+
+.navigation-auto div{
+    border: 0.01px solid black;
+    padding: 0.1px;
+    width:2pc;
+    height:0.5px;
+    transition: 2s;
+
+
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right:20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background:hsl(0, 0%, 1%);
+    
+    
+
+
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background:hsl(0, 0%, 5%) ;
+
+
+
+}#radio3:checked ~ .navigation-auto .auto-btn3{
+    background:hsl(0, 0%, 3%) ;
+    
+
+}#radio4:checked ~ .navigation-auto .auto-btn4{
+    background:hsl(0, 0%, 4%) ;
+
+
+}
+
+
+
+.mani{
+    
+    
+    
+
+
+
+}
+
+.by{
+    text-align: center;
+    
+
+    padding:auto;
+
+
+}
+.clasi{
+    background-image:url( red.png);
+
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+h1{
+    overflow: hidden;
+    text-align: center;
+    animation:fadeInLeft 12s;
+}
+
