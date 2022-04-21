@@ -1,3 +1,5 @@
+
+This application aims to inform people about tourism in Kosovo.
 # GetToKnowKosova_Grupi22
 Anetaret ne grup: 
 1.Njomza Rexhepi
